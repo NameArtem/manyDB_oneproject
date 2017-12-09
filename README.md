@@ -12,26 +12,25 @@ python manage.py startapp app_name
 
 
 2. Исправляем файл settings.py. Добавляем туда ещё одну базу данных в DATABASE:
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', #тип БД (я работаю с POSTGRESQL)
-        'NAME': 'default',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-    },
-    #Вторая БД которую добавляем
-    'data_base':{
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',#тип БД (я работаю с POSTGRESQL)
-        'NAME': 'Имя базы данных, которую будете использовать',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', #тип БД (я работаю с POSTGRESQL)
+            'NAME': 'default',
+            'USER': '',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
+        },
+        #Вторая БД которую добавляем
+        'data_base':{
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',#тип БД (я работаю с POSTGRESQL)
+            'NAME': 'Имя базы данных, которую будете использовать',
+            'USER': '',
+            'PASSWORD': '',
+            'HOST': '',
+            'PORT': '',
+        }
     }
-}
 
 
 
