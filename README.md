@@ -10,7 +10,6 @@ python manage.py startapp app_name
 -----------------------------------------------------------------------------------
 
 2 Исправляем файл settings.py. Добавляем туда ещё одну базу данных в DATABASE:
-'''json
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2', #тип БД (я работаю с POSTGRESQL)
@@ -30,7 +29,6 @@ python manage.py startapp app_name
             'PORT': '',
         }
     }
-'''
 
 -----------------------------------------------------------------------------------
 
